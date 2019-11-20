@@ -1,18 +1,23 @@
 <template>
   <div id="main">
-    <HeroCard name="Mirana" img="https://gamepedia.cursecdn.com/dota2_gamepedia/1/12/Mirana_icon.png"/>
-    <HeroCard name="Ember Spirit" img="https://liquipedia.net/commons/images/9/98/Ember_Spirit_Large.png"/>
-    <HeroCard name="Monkey King" img="https://gamepedia.cursecdn.com/dota2_gamepedia/7/7b/Monkey_King_icon.png"/>
+    <HeroList v-bind:heroes="heroes"/>
   </div>
 </template>
 
 <script>
-import HeroCard from './components/HeroCard.vue'
+
+import HeroList from './components/HeroList.vue';
+const heroes = require("./data/heroes.json");
 
 export default {
   name: 'app',
   components: {
-    HeroCard
+    HeroList
+  },
+  data(){
+    return{
+      heroes: heroes
+    }
   }
 }
 </script>
@@ -27,9 +32,5 @@ export default {
   margin-top: 60px;
 }
 
-#main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 </style>

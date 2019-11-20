@@ -1,17 +1,15 @@
 <template>
     <div class="hero-card">
-        <h2>{{name}}</h2>
-        <img :src="img" alt="Hero image"/>
+        <h2>{{hero.localized_name}}</h2>
+        <img :src="'https://api.opendota.com' + hero.img" alt="Hero image"/>
     </div>
 </template>
 
 <script>
+
 export default {
     name: "HeroCard",
-    props: {
-        name: String,
-        img: String 
-    }
+    props: ["hero"]
 }
 </script>
 
