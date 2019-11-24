@@ -1,0 +1,87 @@
+[
+    {
+      "id": "attack_speed",
+      "label": "Cкорость атаки",
+      "levels": 3
+    },
+    {
+        "id": "durable",
+        "label": "Стойкость",
+        "levels": 3
+    },
+    {
+        "id": "escape",
+        "label": "Побег",
+        "levels": 3
+    },
+    {
+        "id": "heal",
+        "label": "Лечение",
+        "levels": 3
+    },
+    {
+        "id": "break_passive",
+        "label": "Отключение пассивок",
+        "levels": 3
+    },
+    {
+        "id": "silence",
+        "label": "Безмолвие",
+        "levels": 3
+    },
+    {
+        "id": "stun",
+        "label": "Оглушение",
+        "levels": 3
+    },
+    {
+        "id": "slow",
+        "label": "Замедление",
+        "levels": 3
+    },
+    {
+        "id": "periodic_dmg",
+        "label": "Периодический урон",
+        "levels": 3
+    },
+    {
+        "id": "mana_break",
+        "label": "Выжигание маны",
+        "levels": 3
+    },
+    {
+        "id": "save",
+        "label": "Спасение",
+        "levels": 3
+    },
+    {
+        "id": "dispell",
+        "label": "Диспел",
+        "levels": 3
+    },
+    {
+        "id": "nuker",
+        "label": "Нюкер",
+        "levels": 3
+    },
+    {
+        "id": "magic_dmg",
+        "label": "Магический урон",
+        "levels": 3
+    },
+    {
+        "id": "physic_dmg",
+        "label": "Физический урон",
+        "levels": 3
+    },
+    {
+        "id": "arm_reduce",
+        "label": "Снижение брони",
+        "levels": 3
+    },
+    {
+        "id": "arm_increase",
+        "label": "Увеличение брони",
+        "levels": 3
+    }
+  ]

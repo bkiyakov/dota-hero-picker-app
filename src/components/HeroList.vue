@@ -1,8 +1,8 @@
 <template>
     <div id="HeroList">
-        <div v-bind:key="hero.id" v-for="hero in heroes">
-            <HeroCard v-bind:hero="hero"/>
-        </div>
+        <HeroCard v-for="hero in heroes"
+            v-bind:key="hero.id"
+            v-bind:hero="hero"/>
     </div>
 </template>
 
