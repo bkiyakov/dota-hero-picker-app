@@ -65,15 +65,16 @@ export default {
       })
     },
     checkNukeFilter: function(heroNukesObj){
+      let heroMatched = true;
       //Может надо просто заменить сравнением двух массивов
       Object.keys(heroNukesObj).forEach(nukeId => {
         this.nukeLevelsFilter.forEach(nukeObj => {
-          if (nukeObj.hasOwnProperty(nukeId) && nukeObj[nukeId] < heroNukesObj[nukeId]){
-            return false;
+          if (nukeObj.hasOwnProperty(nukeId) && nukeObj[nukeId] > heroNukesObj[nukeId]){
+            heroMatched = false;
           }
         })
-        return true;
       })
+      return heroMatched;
     }
   },
   created(){
